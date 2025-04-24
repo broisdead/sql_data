@@ -19,23 +19,12 @@ We inserted a few rows into each table to simulate real-world Ecommerce data.
 
 🔍 Step 3: SQL Operations
 ✅ a. SELECT, WHERE, ORDER BY, GROUP BY
-SELECT * FROM customers; → view all customers
 
-SELECT * FROM orders WHERE order_value > 500;
-
-ORDER BY order_value DESC
-
-GROUP BY customer_id → total spent per customer
 
 🔗 b. JOINS (INNER, LEFT, RIGHT)
-SELECT orders.order_id, customers.customer_name, orders.order_value
-FROM orders
-INNER JOIN customers ON orders.customer_id = customers.customer_id;
+
 📌 c. Subqueries
 Used subqueries to get customers with max orders, or total orders by specific criteria.
 
 📊 d. Aggregate Functions (SUM, AVG, COUNT)
-SUM(order_value) to get total spending
-
-AVG(price) to get average product price
 
